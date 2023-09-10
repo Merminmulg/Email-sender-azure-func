@@ -33,7 +33,7 @@ namespace Email_sender_azure_func
 
                 using var emailMessage = new MimeMessage();
 
-                emailMessage.From.Add(new MailboxAddress("Администрация сайта docxToBlob", "eugenecorporative@outlook.com"));
+                emailMessage.From.Add(new MailboxAddress("Thanks for using docxToBlob", "eugenecorporative@outlook.com"));
                 emailMessage.To.Add(new MailboxAddress("", email));
                 emailMessage.Subject = "File upload";
                 emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
